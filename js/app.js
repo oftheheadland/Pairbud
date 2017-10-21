@@ -333,11 +333,12 @@
         htmlContent += `<img class="activator img-cropper" src="${_petPhoto}"></div>`;
         htmlContent += `<div class="card-content">`;
         htmlContent += `<span class="card-title activator grey-text text-darken-4 truncate">${_petName.substring(0,20)}<i class="material-icons right">more_vert</i></span>`;
+        //htmlContent += `<span class="card-title activator grey-text text-darken-4 truncate">${_contactEmail}<i class="material-icons tiny">email</i></span>`;
         //htmlContent += `<p><i class="material-icons tiny">email</i> <a href="mailto:${_contactEmail}">Contact Email</a></p>`;
         htmlContent += `<p><i class="material-icons tiny">email</i> <a href="mailto:${_contactEmail}">Contact Email</a></p>`;
-        htmlContent += `<p><i class="material-icons tiny">phone</i> ${_contactPhone.substring(0,13)}</p>`;
-        htmlContent += `<p><i class="material-icons tiny">location_on</i> ${_petLocation}</p>`;
-        htmlContent += `<p>Status: ${_availableStatus}</p></div>`;
+        htmlContent += `<p style="color:#666;"><i class="material-icons tiny">phone</i> ${_contactPhone.substring(0,13)}</p>`;
+        htmlContent += `<p style="color:#666;"><i class="material-icons tiny">location_on</i> ${_petLocation}</p>`;
+        htmlContent += `<p style="color:#666">Status: ${_availableStatus}</p></div>`;
         htmlContent += `<div class="card-reveal">`;
         htmlContent += `<span class="card-title grey-text text-darken-4">${_petName}<i class="material-icons right">close</i></span>`;
         htmlContent += `<p>${_petDescription}</p>`;
