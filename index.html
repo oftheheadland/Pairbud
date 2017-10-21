@@ -1,305 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
+  <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fetch</title>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
-<body id="body" class="bg-hero-image">
-    <!-- Start Header -->
-    <header>
-        <!-- Navigation -->
-        <nav class="deep-purple lighten-3" id="top-navigation">
-            <div class="row">
-                <div class="nav-wrapper">
-                    <div class="container">
-                        <div class="col s12 l6">
-                            <a href="./index.html"><img src="../pages/../assets/images/logo.png" alt="Fetch App Logo" class="responsive-img"></a>
-                        </div>
-                        <div class="col s12 l6">
-                            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                <li><a href="./pages/about.html" class="grey-text text-lighten-3">About</a></li>
-                                <li><a href="./pages/shelters.html" class="grey-text text-lighten-3">Shelters</a></li>
-                                <li><a href="./pages/contact.html" class="grey-text text-lighten-3">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- End Header -->
+    <title>Pairbud</title>
 
-    <!-- Start Main Body -->
-    <main id="main">
-        <!-- Start Search Field Section -->
-        <section class="row vertical-center parent" id="form-section">
-            <div class="container center-align" id="main-form">
-                <a href="#"><img src="assets/images/logo.png" alt="App Logo" class="responsive-img" id="main-logo"></a>
-                <!-- Start Form -->
-                <form autocomplete="off" id="animal-search-form">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet" type="text/css">
 
-                    <!-- 
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
+  </head>
 
-Place, environment
-- Does your place have a yard ✅ questionYard
-- Is there a park near your place ✅ questionPark
-- Would you consider a pet in a terrarium? ✅ questionTerrarium
-- Do you live in an apartment? ✅ questionApartment
+  <body id="page-top">
 
-Owner's information(work, personality, allergic etc)
-- Will a pet be alone for more than 8 hours a day?
-- Are you willing to change water, food, and maintain the animals regularly?
-- Do you prefer an active pet or a calm pet?
-- Are you willing to raise more than two pets if they need to be kept in group? reword
-- Do you have children?
-- Do you mind an animal that sheds?
-- Do you have any fur allergic?
-- Are you willing to handle insects if they are prey for your pet?
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Pairbud</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          MENU
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#goal">our goal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#form">find a friend</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#shelters">shelters</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-Miscellaneous
-- Have you ever owned pets? (stretch goal)
-
-Activity with pet
-- Do you want a pet which can do outside activities with you?
-
-
--->
-
-
-                    <!--questionYard -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionYard" id="questionYard" required>
-                <option value="" disabled selected>Does your house have a yard?</option>
-                <option value="Yes" class="teal-text text-accent-2">Yes, I have a yard</option>
-                <option value="No" class="teal-text text-accent-2">No, I don't have a yard</option>         
-              </select>
-                    </div>
-                    <!-- RE-ADD THE QUESTIONS HERE -->
-
-
-                    <!--questionPark -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionPark" id="questionPark" required>
-                <option value="" disabled selected>Is there a park close to you?</option>
-                <option value="Yes" class="teal-text text-accent-2">Yes, there is a nearby park</option>
-                <option value="No" class="teal-text text-accent-2">No, no nearby parks</option>         
-              </select>
-                    </div>
-
-                    <!--questionTerrarium -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionTerrarium" id="questionTerrarium" required>
-                <option value="" disabled selected>Would you consider a pet in a terrarium or cage?</option>
-                <option value="Yes" class="teal-text text-accent-2">Yes, a terrarium is okay with me</option>
-                <option value="No" class="teal-text text-accent-2">No, no terrariums or cages</option>         
-              </select>
-                    </div>
-
-                    <!--questionApartment -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionApartment" id="questionApartment" required>
-                <option value="" disabled selected>Do you live in an apartment?</option>
-                <option value="Yes" class="teal-text text-accent-2">Yes, I live in an apartment</option>
-                <option value="No" class="teal-text text-accent-2">No, I don't live in an apartment</option>         
-              </select>
-                    </div>
-
-
-
-                    <!--questionAlone-->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionAlone" id="questionAlone" required>
-                <option value="" disabled selected>Will your pet alone for more than 8 hours a day?</option>
-                <option value="Yes" class="teal-text text-accent-2">Yes, I will be away from home</option>
-                <option value="No" class="teal-text text-accent-2">No, I will be at home most of the time</option>         
-              </select>
-                    </div>
-
-
-
-                    <!--questionMaintain -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionMaintain" id="questionMaintain" required>
-                <option value="" disabled selected>Are you willing to change water, food, and maintain the animals regularly?</option>
-                <option value="Yes" class="teal-text text-accent-2">Yes, I will be able to maintain them</option>
-                <option value="No" class="teal-text text-accent-2">No, I would prefer a pet that is easy to care for</option>         
-              </select>
-                    </div>
-
-
-
-                    <!--questionActiveCalm -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionActiveCalm" id="questionActiveCalm" required>
-                <option value="" disabled selected>Would an active pet or a calm pet better suit your lifestyle?</option>
-                <option value="Yes" class="teal-text text-accent-2">I prefer an active pet</option>
-                <option value="No" class="teal-text text-accent-2">I prefer a calm pet</option>         
-              </select>
-                    </div>
-
-                    <!--questionMultiple -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionMultiple" id="questionMultiple" required>
-                <option value="" disabled selected>Are you willing to raise more than two pets if they need to be kept in group?</option>
-                <option value="Yes" class="teal-text text-accent-2">I can handle multiple animals</option>
-                <option value="No" class="teal-text text-accent-2">I prefer a single pet</option>         
-              </select>
-                    </div>
-
-                    <!--questionChildren -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionChildren" id="questionChildren" required>
-                <option value="" disabled selected>Do you have small children?</option>
-                <option value="Yes" class="teal-text text-accent-2">I have small children</option>
-                <option value="No" class="teal-text text-accent-2">I do not have small children</option>         
-              </select>
-                    </div>
-
-
-                    <!--questionShed -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionShed" id="questionShed" required>
-                <option value="" disabled selected>Do you mind an animal that sheds? (Allergies, cleaning, etc.)</option>
-                <option value="Yes" class="teal-text text-accent-2">I'm okay with an animal that sheds</option>
-                <option value="No" class="teal-text text-accent-2">I'd prefer an animal that doesn't shed</option>         
-              </select>
-                    </div>
-
-
-
-                    <!--questionInsects -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionInsects" id="questionInsects" required>
-                <option value="" disabled selected>Are you willing to handle insects if they are prey for your pet? (Difficult animal diets)</option>
-                <option value="Yes" class="teal-text text-accent-2">I'm okay with an animal with a difficult diet</option>
-                <option value="No" class="teal-text text-accent-2">I'd prefer an animal that is simpler to care for</option>         
-              </select>
-                    </div>
-
-                    <!--questionOwned -->
-                    <div class="input-field col s12 m4 l4">
-                        <select name="questionOwned" id="questionOwned" required>
-                <option value="" disabled selected>Have you had a pet before?</option>
-                <option value="Yes" class="teal-text text-accent-2">I have experience caring for animals</option>
-                <option value="No" class="teal-text text-accent-2">This is my first pet!</option>         
-              </select>
-                    </div>
-
-
-
-
-
-
-
-                    <!-- DEFAULTS -->
-
-                    <!--question animaltype -->
-                    <!--         
-                <div class="input-field col s12 m4 l4">
-                        <select name="animal-type" id="animal-type" required>
-                <option value="" disabled selected>What are you looking for</option>
-                <option value="dog" class="teal-text text-accent-2">Dog</option>
-                <option value="cat" class="teal-text text-accent-2">Cat</option>
-                <option value="reptile" class="teal-text text-accent-2">Reptile</option>            
-              </select>
-                    </div>
-
-
-
-                    <div class="input-field col s12 m4 l4">
-                        <label for="location"></label>
-                        <input type="text" id="location" name="location" value="" placeholder="Location: Zip Code | City, State | State" required>
-                    </div>
--->
-                    <!--<div class="input-field col s12 m4 l4">
-    <label for="breed"></label>
-    <input type="text" id="breed" name="breed" value="" placeholder="Breed: i.e. Welsh Corgi" class="autocomplete">
-</div>-->
-
-
-
-
-
-
-
-                    <div class="col s12 center">
-                        <button type="submit" id="animal-search-submit" name="button" class="btn teal accent-2">SEARCH</button>
-                    </div>
-
-
-
-
-
-                </form>
-            </div>
-            <!-- Indeterminate Load Bar -->
-            <div class="container center-align loading">
-                <img src="assets/images/loading-fetch.gif" alt="">
-            </div>
-        </section>
-        <!-- End Search Field Section -->
-
-        <!-- Search results -->
-        <section class="row">
-            <div class="container" id="available-animals">
-                <div>
-
-                </div>
-                <!-- Append Search Results -->
-            </div>
-        </section>
-
-    </main>
-    <!-- End Main -->
-
-    <!-- Start Footer -->
-    <footer class="page-footer deep-purple lighten-3">
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">&#60; &#62; with &hearts; By Team JAMT</h5>
-                    <p class="grey-text text-lighten-4">Follow on <a href="https://github.com/oftheheadland" class="footer-links">GitHub <i class="fa fa-github fa-lg"></i></a></p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">PairBud</h5>
-                    <ul>
-                        <li><a href="./pages/about.html" class="grey-text text-lighten-3">About</a></li>
-                        <li><a href="./pages/shelters.html" class="grey-text text-lighten-3">Shelters</a></li>
-                        <li><a href="./pages/contact.html" class="grey-text text-lighten-3">Contact</a></li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <img src="img/logo_white.png" width="60%" style="margin-top: 50px;">
+              <h1 class="brand-heading">Pairbud</h1>
+              <p class="intro-text">A Link to Your New Best Friend</p>
+              <a href="#form" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
             </div>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="left">
-                    <a href="#" class="brand-logo"><img src="../pages/../assets/images/logo.png" alt="App Logo" class="responsive-img small-img"></a>
-                </div>
-                <div class="right">
-                    &copy; 2017 JAMT
-                </div>
-            </div>
+      </div>
+    </header>
+
+
+    <!-- Goal Section -->
+    <section id="goal" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 style="color: #E17468">Our Goal</h2>
+            <p style="color: white">Considering adoption? Not sure which animal will best suit your lifestyle? Pairbud will help you to find the perfect pet depending on your current life situation.</p>
+            <p style="color: white"><a href="https://www.aspca.org/animal-homelessness/shelter-intake-and-surrender/pet-statistics">6.5 million
+              companion animals </a>enter animal shelters every year. Our goal is to give these animals a home quicker and with a higher success rate of both you and the animal adapting to the change.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 style="color: #E17468">Find a Friend</h2>
+            <p>Answer our questionnaire to be expertly matched with local pets in need of a new home!</p>
+            <a href="form.html" class="btn btn-default btn-lg">Go To Questionnaire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shelters Section -->
+    <section id="shelters" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2 style="color: #E17468">Shelters Near You</h2>
+          <p style="color: white">Explore a map of shelters in your area.</p>
+          <a href="shelters.html" class="btn btn-default btn-lg">Go to Map</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section
+    <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Team JAMT • HackHarvard F17</p>
+      </div>
     </footer>
-    <!-- End Footer -->
 
     <!-- Scripts -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js" charset="utf-8"></script>
-    <script src="assets/scripts/helper-functions.js" charset="utf-8"></script>
-    <script src="assets/scripts/app.js" charset="utf-8"></script>
-</body>
+    <script src="js/helper-functions.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
 
 </html>
