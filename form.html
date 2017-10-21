@@ -50,6 +50,9 @@ body{
     <main id="main">
         <!-- Start Search Field Section -->
         <section class="row vertical-center parent" id="form-section">
+        <div class="container center-align" id="title-results-form">
+            <h1 id="animal-result-title"></h1>
+        </div>
             <div class="container center-align" style="margin-top: 150px;" id="main-form">
                 <a href="#"><img src="img/logo_white.png" alt="Fetch App Logo" width="25%" id="main-logo"></a>
 
@@ -266,6 +269,12 @@ body{
     </footer>
 
     <!-- Scripts -->
+    <script>
+            document.getElementById('animal-search-submit').onclick = function() {
+            document.getElementById('animal-result-title').innerHTML = 'Here are the animals we found for you!';
+        }
+    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js" charset="utf-8"></script>
     <script src="js/helper-functions.js" charset="utf-8"></script>
