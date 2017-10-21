@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pairbud | Find a Shelter</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+
+<body id="page-top">
+<style>
+body{
+  background: url("img/wood.png") repeat center scroll;
+}
+</style>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:none; background-color:white;" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Pairbud</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        MENU
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="form.html">find a friend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="shelters.html">shelters</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="row">
+      <div class="container text-center" style="margin-top: 150px;">
+        <h2 class="header" style="color: #E17468">Animal Shelter Lookup</h2>
+        <p style="color: white;">
+          Begin your search here for a local animal shelter or rescue. Enter your zip code, or city and state, to find a list of animal shelters, animal control agencies, and other animal care organizations in your area.
+          You might be closer to your new friend than you think!
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <form class="row valign-wrapper" autocomplete="off" id="shelter-location-form">
+
+          <div class="input-field col s12 l6">
+            <label for="shelter-location"></label>
+            <input type="text" id="shelter-location-input" name="shelter-location" value="" placeholder="Location: Zip Code | City, State | State" required>
+          </div>
+
+          <div class="col s12 l6">
+            <button type="submit" id="shelter-search-submit" name="shelter-button" class="btn">SEARCH</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Map and Table Section -->
+    <section class="container">
+      <div class="row">
+        <div class="col s12">
+          <div id="map">
+            <!-- MAP GOES HERE -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Indeterminate Load Bar -->
+    <section class="row">
+      <div class="container center-align loading">
+        <img src="img/logo.png" width="30%" alt="Loading...">
+      </div>
+    </section>
+
+    <section class="row" id="table-section">
+      <div class="container">
+        <table >
+          <thead>
+            <tr>
+              <th>Name:</th>
+              <th>Location:</th>
+              <th>Phone:</th>
+              <th>Email:</th>
+            </tr>
+          </thead>
+          <tbody id="shelter-table">
+            <!-- TABLE GOES HERE -->
+          </tbody>
+        </table>
+      </div>
+      </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>Team JAMT • HackHarvard F17</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js" charset="utf-8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1KN3COgNlruwffjQgPkwvVo27NGZNtVs"></script>
+  <script src="js/helper-functions.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="js/shelters.js" charset="utf-8"></script>
+  </body>
+
+  </html>

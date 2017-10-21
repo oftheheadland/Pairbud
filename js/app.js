@@ -271,7 +271,7 @@
     function assignPetFinderPhoto(petDataIndex) {
         let _petPhoto;
         if (!petDataIndex.media.photos) {
-            return _petPhoto = "assets/images/photo-unavailable.png" // placeholder image
+            return _petPhoto = "img/logo.png" // placeholder image
         } else {
             return _petPhoto = petDataIndex.media.photos.photo[2].$t;
         }

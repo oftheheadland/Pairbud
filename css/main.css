@@ -1,7 +1,7 @@
-#animal-result-title{
-    
+#animal-result-title {
+
     margin-top: 10%;
-    
+
 }
 
 
@@ -11,55 +11,56 @@
     margin-right: 25%;
 
 }
+
 .vertical-center {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  margin-top: -2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: -2%;
 }
 
 .row {
-  flex: 1;
+    flex: 1;
 }
 
 .valign-wrapper {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 input::placeholder {
-  color: #757575;
+    color: #757575;
 }
 
 input[type=text] {
-  border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #757575;
 }
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid #64ffda;
+    border-bottom: 1px solid #64ffda;
 }
 
 .img-cropper {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  object-fit: cover;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 input.dropdown-content {
-  border-bottom: 1px solid #757575;
-  box-shadow: none;
+    border-bottom: 1px solid #757575;
+    box-shadow: none;
 
 }
 
 .small-img {
-  width: 30%;
-  padding: 0;
-  margin: 0;
+    width: 30%;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -67,32 +68,30 @@ input.dropdown-content {
 
 /*=========================================*/
 
-
 /*Media Queries*/
-
 
 /*=========================================*/
 
 @media screen and (max-width: 992px) {
-  .img-cropper {
-    height: 400px;
-  }
-  .bg-hero-image {
-    background-image: none;
-  }
-  #map {
-    width: 85vw;
-  }
+    .img-cropper {
+        height: 400px;
+    }
+    .bg-hero-image {
+        background-image: none;
+    }
+    #map {
+        width: 85vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .img-cropper {
-    height: 500px;
-  }
-  .bg-hero-image {
-    background-image: none;
-  }
-  #map {
-    width: 90vw;
-  }
+    .img-cropper {
+        height: 500px;
+    }
+    .bg-hero-image {
+        background-image: none;
+    }
+    #map {
+        width: 90vw;
+    }
 }

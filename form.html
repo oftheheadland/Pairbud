@@ -13,64 +13,70 @@
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 </head>
 
 <body id="page-top">
-<style>
-body{
-  background: url("img/wood.png") repeat center scroll;
-}
-</style>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:none; background-color:white;" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Pairbud</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <style>
+        body {
+            background: url("img/wood.png") repeat center scroll;
+        }
+
+    </style>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:none; background-color:white;" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Pairbud</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         MENU
         <i class="fa fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="form.html">find a friend</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="shelters.html">shelters</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="form.html">find a friend</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="shelters.html">shelters</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Start Main Body -->
     <main id="main">
         <!-- Start Search Field Section -->
+
+
+
+
         <section class="row vertical-center parent" id="form-section">
-        <div class="container center-align" id="title-results-form">
-            <h1 id="animal-result-title"></h1>
-        </div>
+            <div class="container center-align" id="title-results-form">
+                <h3 id="animal-result-title"></h3>
+            </div>
             <div class="container center-align" style="margin-top: 150px;" id="main-form">
-                <a href="#"><img src="img/logo_white.png" alt="Fetch App Logo" width="25%" id="main-logo"></a>
+                <a href="#"><img src="img/logo_white.png" alt="App Logo" width="25%" id="main-logo"></a>
+
 
 
                 <!-- Start Form -->
                 <form autocomplete="off" id="animal-search-form">
-                  <h1>Questionnaire</h1>
-<h3 style="color:#E17468; margin-top:50px;">Living Conditions</h3>
-                  <!--questionYard -->
-                <div class="inner">
-                    <div class="input-field col-xs-12">
-                        <select name="questionYard" id="questionYard" required>
+                    <h1>Questionnaire</h1>
+                    <h3 style="color:#E17468; margin-top:50px;">Living Conditions</h3>
+                    <!--questionYard -->
+                    <div class="inner">
+                        <div class="input-field col-xs-12">
+                            <select name="questionYard" id="questionYard" required>
                 <option value="" disabled selected>Does your house have a yard?</option>
                 <option value="Yes" class="teal-text text-accent-2">Yes, I have a yard</option>
                 <option value="No" class="teal-text text-accent-2">No, I don't have a yard</option>
               </select>
+                        </div>
                     </div>
-                </div>
 
                     <!--questionPark -->
                     <div class="input-field col-xs-12">
@@ -99,7 +105,7 @@ body{
               </select>
                     </div>
 
-<h3 style="color:#E17468; margin-top:50px;">Care</h3>
+                    <h3 style="color:#E17468; margin-top:50px;">Care</h3>
 
                     <!--questionAlone-->
                     <div class="input-field col-xs-12">
@@ -141,7 +147,7 @@ body{
               </select>
                     </div>
 
-<h3 style="color:#E17468; margin-top:50px;">Family Life</h3>
+                    <h3 style="color:#E17468; margin-top:50px;">Family Life</h3>
 
                     <!--questionChildren -->
                     <div class="input-field col-xs-12">
@@ -173,7 +179,7 @@ body{
               </select>
                     </div>
 
-<h3 style="color:#E17468; margin-top:50px;">Previous Experience</h3>
+                    <h3 style="color:#E17468; margin-top:50px;">Previous Experience</h3>
 
                     <!--questionOwned -->
                     <div class="input-field col-xs-12">
@@ -184,42 +190,14 @@ body{
               </select>
                     </div>
 
-
-
-                    <!-- DEFAULTS -->
-
-                    <!--question animaltype -->
-                    <!--
-                <div class="input-field col s12 m4 l4">
-                        <select name="animal-type" id="animal-type" required>
-                <option value="" disabled selected>What are you looking for</option>
-                <option value="dog" class="teal-text text-accent-2">Dog</option>
-                <option value="cat" class="teal-text text-accent-2">Cat</option>
-                <option value="reptile" class="teal-text text-accent-2">Reptile</option>
-              </select>
-                    </div>
-
-
-
-                    <div class="input-field col s12 m4 l4">
-                        <label for="location"></label>
-                        <input type="text" id="location" name="location" value="" placeholder="Location: Zip Code | City, State | State" required>
-                    </div>
-
-                    <div class="input-field col s12 m4 l4">
-                        <label for="breed"></label>
-                        <input type="text" id="breed" name="breed" value="" placeholder="Breed: i.e. Welsh Corgi" class="autocomplete">
-                    </div>
-                -->
-
                     <div class="col s12 center">
                         <button type="submit" id="animal-search-submit" name="button" class="btn btn-default btn-lg">SEARCH</button>
                     </div>
-                  </form>
+                </form>
             </div>
             <!-- Indeterminate Load Bar -->
             <div class="container center-align loading">
-                <img src="img/logo.png">
+                <img src="img/logo.png" width="30%">
             </div>
         </section>
         <!-- End Search Field Section -->
@@ -234,47 +212,28 @@ body{
     </main>
     <!-- End Main -->
 
-    <!-- Start Footer
-    <footer class="page-footer deep-purple lighten-3">
-        <div class="container">
-            <div class="row">
-
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Pairbud</h5>
-                    <ul>
-                        <li><a href="index.html" class="grey-text text-lighten-3">Home</a></li>
-                        <li><a href="form.html" class="grey-text text-lighten-3">Find a Friend</a></li>
-                        <li><a href="shelters.html" class="grey-text text-lighten-3">Shelters</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="left">
-                    <a href="#" class="brand-logo"><img src="img/logo.png" class="responsive-img small-img"></a>
-                </div>
-                <div class="right">
-                    Team JAMT • HackHarvard F17
-                </div>
-            </div>
-        </div>
-    </footer>
-    End Footer -->
     <!-- Footer -->
     <footer>
-      <div class="container text-center">
-        <p>Team JAMT • HackHarvard F17</p>
-      </div>
+        <div class="container center-align" id="animal-result-footer">
+            <h1 id="animal-result-footer"></h1>
+        </div>
+        <div class="container text-center">
+            <p>Team JAMT • HackHarvard F17</p>
+        </div>
     </footer>
 
     <!-- Scripts -->
     <script>
-            document.getElementById('animal-search-submit').onclick = function() {
+        document.getElementById('animal-search-submit').onclick = function() {
             document.getElementById('animal-result-title').innerHTML = 'Here are the animals we found for you!';
+            document.getElementById('animal-result-footer').innerHTML = '<a href="form.html" class="btn btn-default">Search again!</a>';
         }
+
     </script>
-    
+    <script>
+
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js" charset="utf-8"></script>
     <script src="js/helper-functions.js" charset="utf-8"></script>
