@@ -195,9 +195,9 @@
             createQueryStringURL(locationInput, breedInput, animalInput);
         }
 
-        if (dogCount > 10) {
+     
             createQueryStringURL(locationInput, breedInput, animalInput2);
-        }
+       
 
         if (reptileCount > 10) {
             createQueryStringURL(locationInput, breedInput, animalInput3);
