@@ -62,8 +62,8 @@ We would also like to thank the Best Friends Animal Society for inspiring us to 
 ***
 **Email**	  :
 - avanness@student.bridgew.edu
-- C3ROBINSON@student.bridgew.edu
-- JROSSETTI@student.bridgew.edu
+- tgoulski@student.bridgew.edu
+- jrossetti@student.bridgew.edu
 - m6lee@student.bridgew.edu
 
 
