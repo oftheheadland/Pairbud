@@ -1,5 +1,5 @@
 # Pairbud
-Introducing Pairbud, the fast, easy way to find your new best friend. 
+Introducing Pairbud, the fast, easy way to find your new best friend. This website will help users find their ideal pet from a shelter in their area.
 
 ![](https://raw.githubusercontent.com/oftheheadland/Pairbud/master/screenshot.PNG)
 
