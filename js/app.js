@@ -55,7 +55,7 @@
         var questionShed = $("#questionShed").val();
         var questionInsects = $("#questionInsects").val();
         var questionOwned = $("#questionOwned").val();
-
+        var locationInput = $("#questionLocation").val();
         //algorithm to determine best match
 
         var dogCount = 0;
@@ -184,7 +184,7 @@
         var animalInput3 = "reptile";
         var animalInput4 = "smallfurry";
         var animalInput5 = "bird";
-        var locationInput = "02360";
+        //var locationInput = "02360";
 
 
         //createQueryStringURL(locationInput, breedInput, animalInput);
